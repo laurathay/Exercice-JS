@@ -1,0 +1,33 @@
+Cookies 2.0
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--ajout pour la question 5, changement de couleur background
+    <script>
+           function changeColor(color) {
+               document.body.style.background = color;
+           }
+       </script> -->
+  </head>
+  <body>
+
+    <h1 id="title"> Titre de mon site </h1> <!-- id pour la question 4 autre facon-->
+    <p> Premier paragraphe </p>
+    <p> Deuxieme paragraphe </p>
+
+    <div class="cookies-banner">
+      <p>
+        Cliquez sur J'accepte pour accepter l'utilisation de cookies sur ce site.
+      </p>
+      <button type="button" class="accept-button" id="remove-button">Accepter</button> <!-- le id c'est pour l'alternative de la derniere question 6-->
+      <button type="button" class="refuse-button"> Je refuse </button>
+      <button type="button" class="survolez-moi"> Survolez-moi </button> <!-- autre facon de faire  -->
+      <button type="submit" class="change"> Change Titre </button> <!-- question 4 apres submit onclick="document.querySelector('h1').style.color='red'" -->
+      <button type="submit" class="vert"> Vert </button> <!-- question 5 apres button onclick ="changeColor('green');"-->
+    </div>
+
+    <script src="cookies2.js"></script> <!-- ce lien a cet endroit relie avec JS, toujours le mettre ici -->
+  </body>
+</html>

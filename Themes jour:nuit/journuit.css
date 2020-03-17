@@ -1,0 +1,21 @@
+h1{
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px; 
+}
+
+.jour, .nuit{
+	display: flex;
+	display: inline-block;
+	margin: 20px 20px 20px 200px; 
+}
+
+.theme-jour{
+	background-color: pink;
+	color: beige;
+}
+
+.theme-nuit{
+	background-color: black;
+	color:white;
+}

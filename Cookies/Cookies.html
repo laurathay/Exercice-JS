@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container-fluid"> <!-- ne marche que si on a le boostrap déjà-->
+      <section class="window">
+        <p> Cliquez sur "J'accepte" pour accepter l'utilisation de cookies sur ce site</p>
+        <button type="submit"onclick="document.querySelector('h1).remove()"> J'accepte </button>
+    </div> <!-- ce qu'on met dans query selector() c'est ce qui va etre supprimé lorsqu'on clique sur le bouton jaccepte-->
+  </body>
+</html>
+
+<!-- précision query selector ne marche que pour un élément et 1er qui apparait sur la page-->
+ <button type="submit"onclick="document.querySelector('h1,p').remove()"> J'accepte </button>
+
+<!-- pour inclure plusieurs éléments on mettrait query plusieurs pour en supprimer plusieurs mais evidemment ca ne remove que le premier element de chaque-->
+<button type="submit"onclick="document.querySelector('h1').remove()document.querySelector('p').remove()"> J'accepte </button>
+
+<!-- la ca change la couleur du titre h1 quand on clique sur la banner-->
+<button type="submit"onclick="document.querySelector('h1').style.color='red'"> J'accepte </button>
+
+<!-- pour changer la marge du titre une fois qu'on clique sur la banner-->
+<button type="submit"onclick="document.querySelector('h1').style.margin='10px'"> J'accepte </button>
+
+<!-- pour la mettre flex le h1 quand on clique sur la banner -->
+<button type="submit"onclick="document.querySelector('h1').style.display='flex'"> J'accepte </button>
+
+<!-- pas d'espace non plus mais au lieu des tiret ici on mettrait des majuscules ex: -->
+<button type="submit"onclick="document.querySelector('h1').style.backgroundColor='#FFFFFF'"> J'accepte </button>
+
+<!-- la si on clique sur la banner le texte important ne sera plus jaune -->
+<button type="submit"onclick="document.querySelector('h1').classlist=''"> J'accepte </button>
+
+.important{
+  background:yellow;
+}
+
+<h1= important> texte </h1>
+
+<button type="submit"onclick="document.querySelector('h1').remove()document.querySelector('p').classList.remove('important')"> J'accepte </button>
+
+<!-- pour les guillemets, ca n'a pas vraiment d'importance juste pour nous, pour les guillemets du javascript et du html, fini les conflits une fois qu'on aura créer notre propre page js-->
+
+<!-- pour supprimer la banner cookies une fois qu'on a cliquer j'accepte -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+        I agree
+    </button>
+</div>
+
+<!-- celui ci c'est pour que la banner disparait une fois qu'on accepte-->
+	<button type="button" onclick="document.querySelector('.window').remove()" class="btn btn-light">Accepter</button>
+
+<!-- pour afficher un pop up pour demander etes vous sure de refuser -->
+<div class="cookies-banner">
+    <p>
+      Cliquez sur J'accepte pour accepter l'utilisation de cookies sur ce site.
+    </p>
+  <button type="button" onclick="if(confirm('Etes-vous sur de refuser les cookies?')){ document.querySelector('.cookies-banner').remove()}"> Je refuse </button>
+  <button type="button" onclick="document.querySelector('.cookies-banner').remove()"> J'accepte </button>
+</div>
+
+<!-- Autre exercice -->
+
+<div class="cookies-banner">
+  <p>
+    Cliquez sur J'accepte pour accepter l'utilisation de cookies sur ce site.
+  </p>
+  <button type="button" class="accept-button">
+    J'accepte
+  </button>
+</div>
+
+<script>
+    document.querySelector('.accept-button').addEventListener('clicke',function())alert('Bienvenue aux descodeuses!');
+  });
+</script>

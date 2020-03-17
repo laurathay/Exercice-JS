@@ -1,0 +1,13 @@
+body
+{
+  font-family: Courier;
+}
+h1
+{
+  text-align: center;
+}
+
+input:checked + label{
+  text-decoration: line-through;
+  opacity: 0.3;
+}

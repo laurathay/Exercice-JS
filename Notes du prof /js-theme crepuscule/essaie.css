@@ -1,0 +1,112 @@
+.theme-jour {
+  background-color: white;
+  color: black;
+}
+
+.theme-nuit {
+  background-color: black;
+  color: white;
+}
+
+.theme-crepuscule {
+  background-color: #ffefb0;
+  color: #873901;
+}
+
+.theme-matrix{
+	background-color: #24a535 ;
+	color: #b3f2d2;
+}
+
+
+/* theme matrix*/
+
+/*.theme-matrix{
+	background-color: #2e938f;
+	color: #8fc6c4;
+}*/
+
+/*canvas{
+	display:block;
+}*/
+
+
+/* menu déroulant */
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+
+.box {
+  background: #b4b3f2;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.box:hover {
+  background: #f7a3e9;
+}
+
+
+
+
+.booty {
+  background: #8abac3;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.booty:hover {
+  background: #f7b2d3;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+

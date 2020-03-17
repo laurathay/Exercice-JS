@@ -1,0 +1,39 @@
+h1, body
+{
+	text-align: center;
+	font-family: 'Spartan', sans-serif;
+}
+
+.bloc{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f4d3b2;
+	height: 100%;
+	width: 100%;
+}
+
+.bloc2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f9cfeb;
+	height: 100%;
+	width: 100%;
+}
+
+.bloc3{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #d5d4d6;
+	height: 100%;
+	width: 100%;
+}
+
+.none{
+	background-color: inherit;
+}
