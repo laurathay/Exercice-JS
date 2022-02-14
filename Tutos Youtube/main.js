@@ -43,4 +43,50 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', (e) => {
     e.preventDefault(); //pour ne pas qu'il apparraise en demi seconde
     console.log('click');
-})
+    console.log('e.target.id');
+});
+
+
+//when we click we change some change up 
+btn.addEventListener('click', (e) => { //on aurait pu marquer mouseover/mouseout a la place de click
+    e.preventDefault(); //pour ne pas qu'il apparraise en demi seconde
+    document.querySelector('#my-form').style.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
+});
+
+
+
+
+
+//now lets see content into variables
+//by grabbring the things from the DOM
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('#msg');
+const userList = document.querySelector('#users');
+//now submit event on the form
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+    e.prevendDefault();
+    // majuscule et option avec L pour les deux traits 
+
+    if(nameInput.value === ''|| emailInput.value === '' ) {
+        msg.classList.add('error'); //rajoute cette classe
+        msg.innerHTML = 'Please enter all fields';
+
+        setTimeout(() => msg.remove(), 3000) //pour que apès 3 seconde ile message disparait
+    } else {
+        //list item into the ul 
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode('${nameInput.value} : ${emailInput.value}'));
+        userList.appendChild(li);
+
+        //Clear fields 
+        nameInput.value = '';
+        emailInput.value = '';
+    }
+}
+
